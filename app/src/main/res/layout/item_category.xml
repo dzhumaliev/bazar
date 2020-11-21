@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/high_item_categ"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <solutions.isky.gaurangarevolution.presentation.view.LevelBeamView
+        android:id="@+id/dataItemLevelBeam"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/high_item_categ" />
+    <ImageView
+        android:id="@+id/ic_category"
+        android:layout_width="@dimen/item_tips"
+        android:layout_height="@dimen/item_tips"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:layout_toEndOf="@+id/dataItemLevelBeam"
+        android:visibility="visible"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="start|center_vertical"
+        android:layout_toStartOf="@+id/ic_item_arrow"
+        android:layout_marginStart="@dimen/all_padding"
+        android:layout_marginEnd="3dp"
+        android:layout_alignParentStart="false"
+        android:layout_toEndOf="@+id/ic_category">
+        <TextView
+            android:maxLines="1"
+            android:id="@+id/item_category_name"
+            android:layout_width="match_parent"
+            android:textAlignment="viewStart"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:maxLines="1"
+            android:id="@+id/item_category_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:textAlignment="viewStart"
+            android:textColor="@color/color_hint_search" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ic_item_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/all_padding"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

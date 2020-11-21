@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/fab_margin"
+    android:background="@drawable/bg_btn_search"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/size_din_param"
+        android:gravity="center"
+        android:textColor="@color/color_complain"
+        android:layout_height="wrap_content"
+        android:text="@string/acaunt_not_active" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:background="@drawable/bg_btn_phone"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/item_tips"
+            android:minWidth="@dimen/min_widht_btns"
+            android:stateListAnimator="@null"
+            android:textColor="@color/selector_btn_text_phone"
+            android:textAllCaps="false"
+            android:text="@string/ok" />
+    </LinearLayout>
+</LinearLayout>

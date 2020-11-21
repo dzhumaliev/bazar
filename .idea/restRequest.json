@@ -1,0 +1,9 @@
+{
+  "uri": "https://bazar.kz/api_v2/bbs",
+  "method": "POST",
+  "body": "{\"SESID\":\"0o38H2wCQ8U9gWoXFjjVJmyTQAvtu4Ck\",\"item_info\":{\"userfav\":46,\"id\":109,\"similar\":1,\"lang\":\"ru\"}}",
+  "headers": {
+    "Accept": "application/json",
+    "Content-Type": "application/json"
+  }
+}

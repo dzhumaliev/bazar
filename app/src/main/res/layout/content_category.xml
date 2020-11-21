@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="300dp"
+    android:minHeight="300dp"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/fab_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".presentation.ui.category.CategoryActivity"
+    tools:showIn="@layout/activity_category">
+
+
+
+    <solutions.isky.gaurangarevolution.presentation.view.CategoryDopView
+        android:orientation="vertical"
+        android:id="@+id/dopCategContent"
+        android:animateLayoutChanges="true"
+        android:layout_weight="0"
+        android:divider="@drawable/divider_filters"
+        android:showDividers="middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></solutions.isky.gaurangarevolution.presentation.view.CategoryDopView>
+
+    <pl.openrnd.multilevellistview.MultiLevelListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_cacel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_btn_phone"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:stateListAnimator="@null"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:minHeight="@dimen/item_tips"
+        android:minWidth="@dimen/min_widht_btns"
+        android:layout_weight="0"
+        android:textAllCaps="false"
+        android:textColor="@color/selector_btn_text_phone" />
+
+</LinearLayout>

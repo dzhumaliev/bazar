@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RadioGroup
+            android:id="@+id/groupPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sorttext"
+            android:layout_marginTop="@dimen/all_padding"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/all_padding"
+            android:paddingStart="@dimen/all_padding"
+            android:paddingEnd="@dimen/all_padding"
+            android:weightSum="3">
+
+            <RadioButton
+                android:id="@+id/rbPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_price"
+                android:button="@null"
+                android:checked="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:minHeight="@dimen/progress_circle_radius"
+                android:tag="1"
+                android:text="@string/price"
+                android:textAllCaps="false"
+                android:textColor="@color/selector_color_price"
+                android:textSize="@dimen/size_text_info" />
+
+            <RadioButton
+                android:id="@+id/rbFreePrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_free"
+                android:button="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:minHeight="@dimen/progress_circle_radius"
+                android:tag="2"
+                android:text="@string/free_price"
+                android:textAllCaps="false"
+                android:textColor="@color/selector_color_price"
+                android:textSize="@dimen/size_text_info" />
+
+            <RadioButton
+                android:id="@+id/rbexchange"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_exchange"
+                android:button="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:minHeight="@dimen/progress_circle_radius"
+                android:tag="3"
+                android:text="@string/exchange"
+                android:textAllCaps="false"
+                android:textColor="@color/selector_color_price"
+                android:textSize="@dimen/size_text_info" />
+        </RadioGroup>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/all_padding"
+    android:paddingEnd="@dimen/all_padding"
+    android:layout_height="wrap_content">
+    <solutions.isky.gaurangarevolution.presentation.ui.addad.custom_view.MyFildForAddAd
+        android:id="@+id/fild_price"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/all_padding"
+        app:my_isNecessarily="false"
+        app:my_text_hint="@string/price"></solutions.isky.gaurangarevolution.presentation.ui.addad.custom_view.MyFildForAddAd>
+    <solutions.isky.gaurangarevolution.presentation.mvp.addad.currencyview.NiceSpinner
+        android:id="@+id/cur_spinner"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_auction"
+            android:layout_width="match_parent"
+          android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/all_padding">
+                <ImageView
+
+                  android:layout_width="@dimen/size_icon_menu"
+                  android:layout_height="@dimen/size_icon_menu"
+                  android:layout_gravity="center_vertical"
+                  android:visibility="invisible"
+                  app:srcCompat="@drawable/ic_pluss_blue" />
+                <!--<CheckBox-->
+                    <!--android:layout_width="@dimen/size_icon_menu"-->
+                    <!--android:layout_height="@dimen/size_icon_menu"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:button="@drawable/ic_pluss_blue"-->
+                    <!--android:clickable="false"-->
+                    <!--android:visibility="invisible" />-->
+
+                <CheckBox
+                    android:id="@+id/cb_auction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawableRight="@drawable/selector_photo"
+                    android:ellipsize="end"
+                    android:gravity="center|start"
+                    android:maxLines="1"
+                    android:padding="@dimen/common_circle_width"
+                    android:text="@string/aukcion"
+                    android:textColor="@color/selector_color_block_price"
+                    android:textSize="@dimen/size_text_loin" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/all_padding"
+                android:layout_marginEnd="@dimen/all_padding"
+                android:background="@color/color_hint_search"></View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_contract_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/all_padding">
+                <ImageView
+
+                  android:layout_width="@dimen/size_icon_menu"
+                  android:layout_height="@dimen/size_icon_menu"
+                  android:layout_gravity="center_vertical"
+                  android:visibility="invisible"
+                  app:srcCompat="@drawable/ic_pluss_blue" />
+                <!--<CheckBox-->
+                    <!--android:layout_width="@dimen/size_icon_menu"-->
+                    <!--android:layout_height="@dimen/size_icon_menu"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:button="@drawable/ic_pluss_blue"-->
+                    <!--android:clickable="false"-->
+                    <!--android:visibility="invisible" />-->
+
+                <CheckBox
+                    android:id="@+id/cb_contract_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawableRight="@drawable/selector_photo"
+                    android:ellipsize="end"
+                    android:gravity="center|start"
+                    android:maxLines="1"
+                    android:padding="@dimen/common_circle_width"
+                    android:text="@string/contract_price"
+                    android:textColor="@color/selector_color_block_price"
+                    android:textSize="@dimen/size_text_loin" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/all_padding"
+                android:layout_marginEnd="@dimen/all_padding"
+                android:background="@color/color_hint_search"></View>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</merge>

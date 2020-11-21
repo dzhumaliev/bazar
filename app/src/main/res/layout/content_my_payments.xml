@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".presentation.ui.my_profile.MyPaymentsActivity"
+    tools:showIn="@layout/activity_my_payments">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/all_padding"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/all_padding"
+        android:elevation="4dp"
+        app:cardCornerRadius="@dimen/all_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/all_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_balanse"
+                android:textColor="@color/color_hint_search" />
+
+            <TextView
+                android:id="@+id/tv_balanse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_bluer_login"
+                android:textSize="36sp"
+                android:textDirection="ltr"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_gravity="end"
+        android:layout_height="@dimen/size_icon_menu"
+        android:layout_marginEnd="@dimen/all_padding"
+        android:layout_marginTop="@dimen/all_padding"
+        android:background="@drawable/bg_btn_sort"
+        android:text="Пополнить счет"
+        android:visibility="visible"
+        android:textAllCaps="false"
+        android:paddingEnd="@dimen/fab_margin"
+        android:paddingStart="@dimen/fab_margin"
+        android:textColor="@color/selector_btn_text_phone"
+        android:layout_width="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/all_padding"
+        android:text="@string/history_pay"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/all_padding"
+        android:layout_marginEnd="@dimen/all_padding"
+        android:background="@color/color_divider"></View>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swiprefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_limits"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:background="@android:color/white">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewListAds"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

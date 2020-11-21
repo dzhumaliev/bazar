@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingStart="@dimen/fab_margin"
+    android:paddingEnd="@dimen/fab_margin"
+    android:layout_alignParentBottom="true"
+    android:paddingTop="@dimen/all_padding"
+    android:paddingBottom="@dimen/all_padding"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/attachmentButton"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"/>
+
+    <android.support.v4.widget.Space
+        android:id="@+id/attachmentButtonSpace"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toEndOf="@+id/attachmentButton"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/attachmentButtonSpace"
+        android:layout_toStartOf="@+id/sendButtonSpace"
+        android:background="@drawable/bg_fild_send_message">
+        <solutions.isky.gaurangarevolution.presentation.view.MyCustomEditText
+            android:padding="@dimen/all_padding"
+            android:id="@+id/messageInput"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColorHint="#b3b3b3"
+
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/fab_margin"
+            app:x_disableClear="true"
+            android:hint="@string/write_mess_in_chat"
+            android:maxLines="5"
+            android:inputType="textAutoCorrect|textAutoComplete|textMultiLine|textCapSentences"
+            app:x_disableEmoji="true"
+            />
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.Space
+        android:id="@+id/sendButtonSpace"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toStartOf="@+id/messageSendButton"/>
+
+    <ImageView
+        android:id="@+id/messageSendButton"
+        android:layout_width="@dimen/size_icon_menu"
+        android:layout_height="@dimen/size_icon_menu"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/ic_btn_send"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

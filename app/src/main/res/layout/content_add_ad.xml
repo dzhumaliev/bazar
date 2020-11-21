@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mNestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".presentation.ui.addad.AddAdActivity"
+    tools:showIn="@layout/activity_add_ad">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/fab_margin">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:overScrollMode="never" />
+
+        <solutions.isky.gaurangarevolution.presentation.ui.addad.custom_view.MyFildForAddAd
+            android:id="@+id/fild_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/all_padding"
+            android:paddingEnd="@dimen/all_padding"
+            app:my_isNecessarily="true"
+            app:my_text_hint="@string/title_ad"></solutions.isky.gaurangarevolution.presentation.ui.addad.custom_view.MyFildForAddAd>
+
+        <solutions.isky.gaurangarevolution.presentation.ui.addad.custom_view.MyFildForAddAd
+            android:id="@+id/fild_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/all_padding"
+            android:paddingEnd="@dimen/all_padding"
+            app:my_disableArrow="false"
+            app:my_isNecessarily="true"
+            app:my_text_hint="@string/Category"></solutions.isky.gaurangarevolution.presentation.ui.addad.custom_view.MyFildForAddAd>
+
+        <solutions.isky.gaurangarevolution.presentation.ui.addad.custom_view.DinParamsAddAdLayout
+            android:id="@+id/dinamic_params"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/all_padding"
+            android:paddingEnd="@dimen/all_padding"
+            android:visibility="gone"></solutions.isky.gaurangarevolution.presentation.ui.addad.custom_view.DinParamsAddAdLayout>
+
+        <solutions.isky.gaurangarevolution.presentation.ui.addad.custom_view.MyFildForAddAd
+            android:id="@+id/fild_locations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/all_padding"
+            android:paddingEnd="@dimen/all_padding"
+            app:my_disableArrow="false"
+            app:my_isNecessarily="true"
+            app:my_text_hint="@string/location"></solutions.isky.gaurangarevolution.presentation.ui.addad.custom_view.MyFildForAddAd>
+
+        <solutions.isky.gaurangarevolution.presentation.ui.addad.custom_view.MyFildForAddAd
+            android:id="@+id/fild_locations_adr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/all_padding"
+            android:paddingEnd="@dimen/all_padding"
+            android:visibility="gone"
+            app:my_disableArrow="false"
+            app:my_isNecessarily="true"
+            app:my_text_hint="@string/adress"></solutions.isky.gaurangarevolution.presentation.ui.addad.custom_view.MyFildForAddAd>
+
+        <solutions.isky.gaurangarevolution.presentation.ui.addad.custom_view.MyFildForAddAd
+            android:id="@+id/fild_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/all_padding"
+            android:paddingEnd="@dimen/all_padding"
+            app:my_isNecessarily="true"
+            app:my_text_hint="@string/description"
+            app:my_text_lines="4"></solutions.isky.gaurangarevolution.presentation.ui.addad.custom_view.MyFildForAddAd>
+
+        <LinearLayout
+            android:id="@+id/ll_period"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/size_social_icon"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/all_padding"
+            android:paddingEnd="@dimen/all_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/all_padding"
+                android:paddingEnd="@dimen/all_padding"
+                android:text="@string/period_publication"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spinner_period"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/all_padding"
+                android:paddingEnd="@dimen/all_padding"></Spinner>
+
+        </LinearLayout>
+
+        <solutions.isky.gaurangarevolution.presentation.ui.addad.custom_view.BlockPrice
+            android:id="@+id/block_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></solutions.isky.gaurangarevolution.presentation.ui.addad.custom_view.BlockPrice>
+
+        <solutions.isky.gaurangarevolution.presentation.ui.addad.custom_view.MyFildForAddAd
+            android:id="@+id/fild_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/all_padding"
+            android:paddingEnd="@dimen/all_padding"
+            app:my_isNecessarily="true"
+            app:my_text_hint="@string/name"></solutions.isky.gaurangarevolution.presentation.ui.addad.custom_view.MyFildForAddAd>
+
+        <solutions.isky.gaurangarevolution.presentation.ui.addad.custom_view.MyPhonesLayutAdAdd
+            android:id="@+id/phoness_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/all_padding"
+            android:paddingEnd="@dimen/all_padding"></solutions.isky.gaurangarevolution.presentation.ui.addad.custom_view.MyPhonesLayutAdAdd>
+
+        <LinearLayout
+            android:id="@+id/ll_shop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/all_padding"
+            android:visibility="gone">
+
+            <ImageView
+
+                android:id="@+id/logo_shop"
+                android:layout_width="150dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:paddingStart="@dimen/fab_margin"
+                android:paddingEnd="@dimen/fab_margin"
+                android:text="@string/as_shop" />
+
+            <CheckBox
+                android:id="@+id/is_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:button="@drawable/selector_photo"
+                android:checked="false" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_add_new_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/item_tips"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:background="@drawable/bg_btn_login"
+            android:minWidth="@dimen/minwidht_btn_login"
+            android:paddingStart="@dimen/fab_margin"
+            android:paddingEnd="@dimen/fab_margin"
+            android:stateListAnimator="@null"
+            android:text="@string/posting_add"
+            android:textAllCaps="false"
+            android:textColor="@color/selector_btn_text"
+            android:textSize="@dimen/size_text_loin" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/all_padding"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="solutions.isky.gaurangarevolution.presentation.ui.my_profile.RefillActivity"
+    tools:showIn="@layout/activity_refill">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/item_tips"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="На какую сумму вы хотите пополнить счёт?"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        tools:layout_editor_absoluteX="8dp">
+
+        <EditText
+            android:id="@+id/et_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:gravity="center"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_icon_menu"
+            android:background="@drawable/bg_btn_sort"
+            android:enabled="false"
+            android:paddingStart="@dimen/all_padding"
+            android:paddingEnd="@dimen/all_padding"
+            android:text="@string/continue_app"
+            android:textAllCaps="false"
+            android:textColor="@color/selector_btn_text_phone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginEnd="8dp"
+        android:text="@string/select_method"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <RadioGroup
+        android:id="@+id/rg_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginEnd="8dp"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:padding="@dimen/all_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_method">
+
+        <RadioButton
+            android:id="@+id/radioButtonAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/cheack_box_btn"
+            android:checked="true"
+            android:drawableEnd="@drawable/liqpay"
+            android:drawablePadding="@dimen/all_padding"
+            android:paddingEnd="@dimen/all_padding"
+            android:tag="liqpay"
+            android:text="LiqPay"
+            android:textColor="@color/color_price_list"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPayPal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/all_padding"
+            android:button="@drawable/cheack_box_btn"
+            android:drawableEnd="@drawable/ic_paypal"
+            android:drawablePadding="@dimen/all_padding"
+            android:paddingStart="@dimen/all_padding"
+            android:paddingEnd="@dimen/all_padding"
+            android:tag="paypal"
+            android:text="PayPal"
+            android:textColor="@color/color_price_list"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonYandex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/all_padding"
+            android:button="@drawable/cheack_box_btn"
+            android:drawableEnd="@drawable/ic_yandex_pay_logo"
+            android:drawablePadding="@dimen/all_padding"
+            android:paddingStart="@dimen/all_padding"
+            android:paddingEnd="@dimen/all_padding"
+            android:tag="yandex"
+            android:text="Yandex.Money"
+            android:textColor="@color/color_price_list"
+            android:textSize="20sp" />
+    </RadioGroup>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/view_no_shop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/ic_empty_shop_list" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/text_"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:textColor="@color/color_btn_login"
+            android:textSize="@dimen/size_text_loin"
+            android:text="@string/no_shop" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btn_create_shop"
+            android:text="@string/create_shop"
+            android:layout_height="@dimen/hight_btn_login"
+            android:textSize="@dimen/size_text_loin"
+            android:background="@drawable/bg_btn_sort"
+            android:paddingStart="@dimen/radius_btn_login"
+            android:paddingEnd="@dimen/radius_btn_login"
+            android:textAllCaps="false"
+            android:stateListAnimator="@null"
+            android:layout_below="@+id/text_"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:textColor="@color/selector_btn_text_sort"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:id="@+id/view_shop_in_moderation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/ic_empty_shop_list" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/text_moderation"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView33"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:textColor="@color/color_btn_login"
+            android:textSize="@dimen/size_text_loin" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btn_return"
+            android:text="@string/returned"
+            android:layout_height="@dimen/hight_btn_login"
+            android:textSize="@dimen/size_text_loin"
+            android:background="@drawable/bg_btn_sort"
+            android:paddingStart="@dimen/radius_btn_login"
+            android:paddingEnd="@dimen/radius_btn_login"
+            android:textAllCaps="false"
+            android:stateListAnimator="@null"
+            android:layout_below="@+id/text_moderation"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:textColor="@color/selector_btn_text_sort"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

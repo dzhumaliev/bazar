@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <solutions.isky.gaurangarevolution.domain.filters.NonFocusingScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/all_padding"
+            android:layout_marginEnd="@dimen/all_padding"
+            android:divider="@drawable/divider_filters"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/all_padding"
+            android:showDividers="middle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/all_padding"
+                android:paddingTop="@dimen/size_icon_24">
+
+                <ImageView
+                    android:id="@+id/btn_clear_text"
+                    android:layout_width="@dimen/size_icon_24"
+                    android:layout_height="@dimen/size_icon_24"
+                    app:srcCompat="@drawable/ic_search_filters" />
+
+                <solutions.isky.gaurangarevolution.presentation.view.MyCustomEditText
+                    android:id="@+id/etSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/all_padding"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/search"
+                    android:textAlignment="viewStart"
+                    android:gravity="start"
+                    android:imeOptions="flagNoExtractUi|actionDone"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/color_hint_search"
+                    app:x_clearDrawable="@drawable/ic_clear_red"
+                    app:x_disableClear="false"
+                    app:x_disableEmoji="true" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/all_padding"
+                android:paddingTop="@dimen/size_icon_24">
+
+                <requestFocus></requestFocus>
+
+                <ImageView
+                    android:id="@+id/ivLoc"
+                    android:layout_width="@dimen/size_icon_24"
+                    android:layout_height="@dimen/size_icon_24"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/ic_location_filters" />
+
+                <solutions.isky.gaurangarevolution.presentation.view.MyCustomEditText
+                    android:id="@+id/loc_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/all_padding"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/location"
+                    android:textAlignment="viewStart"
+                    android:gravity="start"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/color_hint_search"
+                    app:x_disableClear="true"
+                    app:x_disableEmoji="true" />
+
+
+                <ImageView
+                    android:id="@+id/arr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:focusableInTouchMode="false"
+                    android:paddingStart="@dimen/all_padding"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_right" />
+
+                <ImageView
+                    android:id="@+id/ibClear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:paddingStart="@dimen/all_padding"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_clear_red" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/all_padding"
+                android:paddingTop="@dimen/size_icon_24">
+
+                <requestFocus></requestFocus>
+
+                <ImageView
+                    android:id="@+id/ivCateg"
+                    android:layout_width="@dimen/size_icon_24"
+                    android:layout_height="@dimen/size_icon_24"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/ic_category_filters" />
+
+                <solutions.isky.gaurangarevolution.presentation.view.MyCustomEditText
+                    android:id="@+id/etCateg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/all_padding"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:textAlignment="viewStart"
+                    android:gravity="start"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/Category"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/color_hint_search"
+                    app:x_disableClear="true"
+                    app:x_disableEmoji="true" />
+
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:focusableInTouchMode="false"
+                    android:paddingStart="@dimen/all_padding"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_right" />
+
+                <ImageView
+                    android:id="@+id/ibClearCateg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:paddingStart="@dimen/all_padding"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_clear_red" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/all_padding"
+                android:paddingTop="@dimen/size_icon_24">
+
+                <ImageView
+                    android:id="@+id/ivPhoto"
+                    android:layout_width="@dimen/size_icon_24"
+                    android:layout_height="@dimen/size_icon_24"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/ic_photo_filters" />
+
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/all_padding"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="false"
+                    android:textSize="@dimen/size_din_param"
+                    android:drawableEnd="@drawable/selector_photo"
+                    android:text="@string/with_photo"
+                    android:textColor="@color/selector_text_photo_filter" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/all_padding">
+
+                <include
+                    android:id="@+id/price_param"
+                    layout="@layout/din_param_type_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/all_padding"
+                    android:visibility="gone">
+
+                </include>
+
+                <solutions.isky.gaurangarevolution.presentation.view.DinParamsLayout
+                    android:id="@+id/ll_params"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:visibility="gone"></solutions.isky.gaurangarevolution.presentation.view.DinParamsLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/all_padding">
+
+                    <TextView
+                        android:id="@+id/sorttext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sort"
+                        android:textColor="@android:color/black" />
+
+                    <RadioGroup
+                        android:id="@+id/groupSort"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/sorttext"
+                        android:layout_marginTop="@dimen/all_padding"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <RadioButton
+                            android:id="@+id/rbSortNews"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_newst_sort"
+                            android:button="@null"
+                            android:checked="true"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:minHeight="@dimen/size_icon_menu"
+                            android:tag="1"
+                            android:text="@string/newest"
+                            android:textAllCaps="false"
+                            android:textColor="@color/selector_color_sort_group"
+                            android:textSize="@dimen/size_text_info" />
+
+                        <RadioButton
+                            android:id="@+id/rbSortCheap"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_cheap_sort"
+                            android:button="@null"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:minHeight="@dimen/size_icon_menu"
+                            android:tag="2"
+                            android:text="@string/cheapest"
+                            android:textAllCaps="false"
+                            android:textColor="@color/selector_color_sort_group"
+                            android:textSize="@dimen/size_text_info" />
+
+                        <RadioButton
+                            android:id="@+id/rbSortExpensive"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_expensive_sort"
+                            android:button="@null"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:minHeight="@dimen/size_icon_menu"
+                            android:tag="3"
+                            android:text="@string/expensive"
+                            android:textAllCaps="false"
+                            android:textColor="@color/selector_color_sort_group"
+                            android:textSize="@dimen/size_text_info" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/all_padding"
+                    android:paddingTop="@dimen/fab_margin">
+
+                    <TextView
+                        android:id="@+id/textprivatebusiness"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/groupSort"
+                        android:text="@string/private_or_biznes"
+                        android:textColor="@android:color/black" />
+
+                    <RadioGroup
+                        android:id="@+id/groupPrivateBusiness"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/textprivatebusiness"
+                        android:layout_marginTop="@dimen/all_padding"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <RadioButton
+                            android:id="@+id/rbAllFirm"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_newst_sort"
+                            android:button="@null"
+                            android:checked="true"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:minHeight="@dimen/size_icon_menu"
+                            android:tag="1"
+                            android:text="@string/allFirm"
+                            android:textAllCaps="false"
+                            android:textColor="@color/selector_color_sort_group"
+                            android:textSize="@dimen/size_text_info" />
+
+                        <RadioButton
+                            android:id="@+id/rbPrivate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_cheap_sort"
+                            android:button="@null"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:minHeight="@dimen/size_icon_menu"
+                            android:tag="2"
+                            android:text="@string/privateFirm"
+                            android:textAllCaps="false"
+                            android:textColor="@color/selector_color_sort_group"
+                            android:textSize="@dimen/size_text_info" />
+
+                        <RadioButton
+                            android:id="@+id/rbBusiness"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_expensive_sort"
+                            android:button="@null"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:minHeight="@dimen/size_icon_menu"
+                            android:tag="3"
+                            android:text="@string/businessFirm"
+                            android:textAllCaps="false"
+                            android:textColor="@color/selector_color_sort_group"
+                            android:textSize="@dimen/size_text_info" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/all_padding"
+                    android:paddingTop="@dimen/fab_margin">
+
+                    <TextView
+                        android:id="@+id/textViewTable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/groupSort"
+                        android:text="@string/view_ads"
+                        android:textColor="@android:color/black" />
+
+                    <RadioGroup
+                        android:id="@+id/groupViews"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/textprivatebusiness"
+                        android:layout_marginTop="@dimen/all_padding"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RadioButton
+                            android:id="@+id/rbList"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_newst_sort"
+                            android:button="@null"
+                            android:checked="true"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:minHeight="@dimen/size_icon_menu"
+                            android:tag="1"
+                            android:text="@string/list_view"
+                            android:textAllCaps="false"
+                            android:textColor="@color/selector_color_sort_group"
+                            android:textSize="@dimen/size_text_info" />
+
+
+                        <RadioButton
+                            android:id="@+id/rbTable"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_expensive_sort"
+                            android:button="@null"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:minHeight="@dimen/size_icon_menu"
+                            android:tag="2"
+                            android:text="@string/view_grid"
+                            android:textAllCaps="false"
+                            android:textColor="@color/selector_color_sort_group"
+                            android:textSize="@dimen/size_text_info" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/item_tips"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/size_icon_24"
+                    android:background="@drawable/bg_btn_login"
+                    android:clickable="true"
+                    android:gravity="center|start"
+                    android:paddingStart="@dimen/fab_margin"
+                    android:paddingEnd="@dimen/fab_margin">
+
+                    <TextView
+                        android:id="@+id/tvResult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:focusableInTouchMode="false"
+                        android:singleLine="true"
+                        android:text="@string/result_filter"
+                        android:textColor="@color/selector_btn_text_phone"
+                        android:textSize="@dimen/size_text_info" />
+
+                    <TextView
+                        android:id="@+id/tvQuantityResult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/tvResult"
+                        android:focusableInTouchMode="false"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="@color/selector_btn_text_phone"
+                        android:textSize="@dimen/size_text_info" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </solutions.isky.gaurangarevolution.domain.filters.NonFocusingScrollView>
+
+
+</LinearLayout>

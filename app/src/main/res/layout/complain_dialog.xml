@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="@dimen/width_dialog_fragment"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="1dp"
+    app:cardCornerRadius="@dimen/all_padding"
+    android:layout_margin="@dimen/all_padding"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/all_padding">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/complain"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_text_loin"
+            android:textColor="@color/color_price_list"
+            android:gravity="center" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:text="@string/invalid_heading"
+            android:button="@drawable/cheack_box_btn"
+            android:textColor="@color/color_complain"
+            android:padding="@dimen/all_padding"
+            android:layout_marginStart="@dimen/all_padding"
+            android:id="@+id/cb_invalid_heading" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prohibited_product"
+            android:button="@drawable/cheack_box_btn"
+            android:textColor="@color/color_complain"
+            android:padding="@dimen/all_padding"
+            android:layout_marginStart="@dimen/all_padding"
+            android:id="@+id/cb_prohibited_product" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/cheack_box_btn"
+            android:text="@string/add_not_relevant"
+            android:textColor="@color/color_complain"
+            android:padding="@dimen/all_padding"
+            android:layout_marginStart="@dimen/all_padding"
+            android:id="@+id/cb_add_not_relevant" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/cheack_box_btn"
+            android:text="@string/invalid_address"
+            android:textColor="@color/color_complain"
+            android:padding="@dimen/all_padding"
+            android:layout_marginStart="@dimen/all_padding"
+            android:id="@+id/cb_invalid_address"  />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/other"
+                android:button="@drawable/cheack_box_btn"
+                android:textColor="@color/color_complain"
+                android:padding="@dimen/all_padding"
+                android:layout_marginStart="@dimen/all_padding"
+                android:id="@+id/cb_other"  />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_text"
+                android:padding="@dimen/all_padding"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:maxLength="140"
+                android:layout_marginStart="@dimen/all_padding"
+                android:layout_marginEnd="@dimen/all_padding"
+                android:maxLines="3"
+                android:lines="3"
+              android:visibility="gone"
+                android:textSize="@dimen/size_text_info"
+                android:gravity="start"
+                android:background="@drawable/bg_message" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/all_padding"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_send_complain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:minHeight="@dimen/item_tips"
+                android:textAllCaps="false"
+                android:text="@string/send_complain"
+                android:textStyle="bold"
+                android:paddingEnd="@dimen/fab_margin"
+                android:paddingStart="@dimen/fab_margin"
+                android:stateListAnimator="@null"
+                android:textColor="@color/selector_btn_text_phone"
+                android:background="@drawable/bg_btn_phone"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+
+

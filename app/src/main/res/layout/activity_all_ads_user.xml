@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".presentation.ui.adsuser.AllAdsUserActivity">
+  <include layout="@layout/content_all_ads_user"/>
+  <android.support.design.widget.AppBarLayout
+    android:id="@+id/appbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppBarOverlay">
+    <android.support.design.widget.CollapsingToolbarLayout
+      android:id="@+id/htab_collapse_toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:fitsSystemWindows="true"
+      app:contentScrim="?attr/colorPrimary"
+      app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+      app:titleEnabled="false">
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_collapseMode="parallax"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@android:color/white">
+
+        <LinearLayout
+          android:id="@+id/info_contetnt"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/fab_margin"
+          android:orientation="horizontal"
+          android:weightSum="2">
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+              android:id="@+id/tvCountAds"
+              android:textStyle="bold"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/img_photo_user"
+              android:layout_centerHorizontal="true"
+              android:gravity="center"
+              android:textColor="@color/color_btn_login"
+              android:textSize="48sp"/>
+
+            <TextView
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/img_photo_user"
+              android:layout_centerHorizontal="true"
+              android:gravity="center"
+              android:text="@string/count_ads"
+              android:textColor="@color/color_complain"/>
+
+            <TextView
+              android:id="@+id/tvLastActiv"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:maxLines="2"
+              android:textColor="@color/color_text_activity"
+              android:visibility="visible"/>
+          </LinearLayout>
+
+          <ImageView
+            android:id="@+id/img_photo_user"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_img_ad"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+          android:id="@+id/block_shop_info"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/all_padding"
+          android:layout_below="@+id/info_contetnt"
+          android:orientation="vertical"
+          android:visibility="gone">
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:showDividers="none">
+            <solutions.isky.gaurangarevolution.presentation.view.ButtonMenu
+              android:id="@+id/btn_shop_site"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:background="@android:color/white"
+              android:stateListAnimator="@null"
+              android:text="@string/web_site"
+              android:textAllCaps="false"
+              android:textColor="@android:color/black"
+              app:drawableBottomCompat="@drawable/select_btn_site"/>
+
+            <solutions.isky.gaurangarevolution.presentation.view.ButtonMenu
+              android:id="@+id/btn_shop_phone"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:background="@android:color/white"
+              android:stateListAnimator="@null"
+              android:text="@string/contakts"
+              android:textAllCaps="false"
+              android:textColor="@android:color/black"
+              app:drawableBottomCompat="@drawable/select_btn_phone"/>
+          </LinearLayout>
+
+          <solutions.isky.gaurangarevolution.presentation.mvp.info_ad.view.ExpandableTextView
+            android:id="@+id/tvDescrShop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/all_padding"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_marginEnd="@dimen/fab_margin"
+            app:DrawableAndTextGravity="center"
+            app:contentTextColor="@color/color_city"
+            app:expandCollapseTextColor="@color/color_price_list"
+            app:maxCollapsedLines="4"></solutions.isky.gaurangarevolution.presentation.mvp.info_ad.view.ExpandableTextView>
+        </LinearLayout>
+      </RelativeLayout>
+      <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ToolbarStyle"
+        android:layout_gravity="top"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+
+
+  </android.support.design.widget.AppBarLayout>
+
+
+  <include
+    android:id="@+id/view_no_internet"
+    layout="@layout/no_internet"
+    android:visibility="gone"></include>
+  <RelativeLayout
+    android:id="@+id/view_no_ads"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:paddingStart="@dimen/all_padding"
+    android:paddingEnd="@dimen/all_padding"
+    android:visibility="gone">
+
+
+    <ImageView
+      android:id="@+id/img_no_ads"
+      android:layout_width="wrap_content"
+      android:layout_height="@dimen/width_img_ad"
+      android:layout_centerHorizontal="true"
+      app:srcCompat="@drawable/ic_empty_list" />
+
+    <TextView
+      android:id="@+id/text_no_ads"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/img_no_ads"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="@dimen/all_padding"
+      android:text="@string/ads_empty"
+      android:textColor="@color/color_price_list"
+      android:textSize="18dp" />
+
+  </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

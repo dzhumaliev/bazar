@@ -1,0 +1,52 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="all_padding">8dp</dimen>
+    <dimen name="size_icons">16dp</dimen>
+    <dimen name="width_img_ad">145dp</dimen>
+    <dimen name="height_img_ad">100dp</dimen>
+    <dimen name="width_img_shop">250dp</dimen>
+    <dimen name="menu_top">60dp</dimen>
+    <dimen name="size_icon_menu">32dp</dimen>
+    <dimen name="size_icon_24">24dp</dimen>
+    <dimen name="hight_ad_grid">140dp</dimen>
+    <dimen name="size_social_icon">52dp</dimen>
+    <dimen name="radius_btn_login">28dp</dimen>
+    <dimen name="hight_btn_login">56dp</dimen>
+    <dimen name="size_text_loin">18sp</dimen>
+    <dimen name="size_text_city">20sp</dimen>
+    <dimen name="minwidht_btn_login">200dp</dimen>
+    <dimen name="radius_error_bg">10dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="item_tips">40dp</dimen>
+    <dimen name="radius_btn20">20dp</dimen>
+    <dimen name="padding_data">70dp</dimen>
+    <dimen name="size_image_Aditem_photo_user">75dp</dimen>
+    <dimen name="min_widht_btns">115dp</dimen>
+    <dimen name="size_text_info">12sp</dimen>
+    <dimen name="size_text_edit_email">13sp</dimen>
+    <dimen name="size_din_param">16sp</dimen>
+    <dimen name="app_bar_height_info">315dp</dimen>
+    <dimen name="width_dialog_fragment">300dp</dimen>
+    <dimen name="heigh_nav_bar">180dp</dimen>
+    <dimen name="size_avatar_bar">90dp</dimen>
+    <dimen name="radius_filter">5dp</dimen>
+    <dimen name="data_item_row_padding">5dp</dimen>
+    <dimen name="level_beam_line_width">6dp</dimen>
+    <dimen name="level_beam_line_offset">2dp</dimen>
+    <dimen name="high_item_categ">56dp</dimen>
+    <dimen name="max_width_filter">140dp</dimen>
+    <dimen name="heigh_size_fild">32dp</dimen>
+    <dimen name="icon_size_menu_profile">80dp</dimen>
+
+    <!--для диалога-->
+    <dimen name="alert_width">290dp</dimen>
+    <dimen name="common_circle_width">3dp</dimen>
+    <dimen name="progress_circle_radius">34dp</dimen>
+    <dimen name="size_add_photo_ic">55dp</dimen>
+    <dimen name="size_img_dialogs">60dp</dimen>
+    <dimen name="size_bubble">24dp</dimen>
+
+    <dimen name="three_grid_unit">24dp</dimen>
+    <dimen name="one_and_a_half_grid_unit">12dp</dimen>
+</resources>

@@ -1,0 +1,352 @@
+<resources>
+    <string name="app_name">bazar.kz</string>
+    <string name="action_settings">Settings</string>
+    <string name="premium">Премиум</string>
+    <string name="free_price">Бесплатно</string>
+    <string name="contract_price">Договорная цена</string>
+    <string name="exchange">Обмен</string>
+    <string name="newest">Самые новые</string>
+    <string name="cheapest">Самые дешевые</string>
+    <string name="expensive">Самые дорогие</string>
+    <string name="user_email_inuse">Пользователь с таким email есть в базе</string>
+    <string name="shop_descr_too_short">Слишком короткое описание, не менее 12 символов</string>
+    <string name="unknown_error">Неизвестная ошибка</string>
+    <string name="message_too_short">Слишком короткое сообщение</string>
+    <string name="error_retrieving_data">При получении данных произошла ошибка</string>
+    <string name="for_exit">Для выхода нажмите еще раз</string>
+    <string name="sort">Сортировка</string>
+    <string name="private_or_biznes">Частное или Бизнес</string>
+    <string name="allFirm">Все</string>
+    <string name="privateFirm">Частное</string>
+    <string name="businessFirm">Бизнес</string>
+    <string name="search">Поиск</string>
+    <string name="no_internet_connectoin">Отсутствует подключение к Интернету</string>
+    <string name="title_activity_login" translatable="false">LoginActivity</string>
+    <string name="login_in">Войти</string>
+    <string name="forget_pass">Забыли пароль?</string>
+    <string name="register">Регистрация</string>
+    <string name="or">Или</string>
+    <string name="pass">Пароль</string>
+    <string name="pass2">Повторите пароль</string>
+    <string name="email">E-mail</string>
+    <string name="error_invalid_email">Неверный формат эл.почты</string>
+    <string name="error_invalid_pass">Пароль должен быть не менее %1$s символов</string>
+    <string name="error_invalid_passes">Пароли не совпадают</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="pass_repeat">Повторите пароль</string>
+    <string name="fail_login_or_pass">Не верный Login или пароль</string>
+    <string name="already_have_shop">Магазин уже открыт</string>
+    <string name="error_create_shop">Ошибка ссоздания магазина</string>
+    <string name="shop_open_request_spam">Слишком частый запрос на создание магазина</string>
+    <string name="shop_edit_request_spam">Слишком частый запрос на изменение магазина</string>
+
+    <string name="title_activity_info_ad">Информация</string>
+    <string name="expand_string">Читать далее</string>
+    <string name="collapsed_string">Свернуть</string>
+    <string name="yes">да</string>
+    <string name="no">нет</string>
+    <string name="user_phone_inuse">Пользователь с таким телефоном есть в базе</string>
+    <string name="google_maps_key" translatable="false">AIzaSyAnLZDlzPwCcYcUVOD5nU8tRPIOe6o2yjs</string>
+    <string name="write_message">Напишите сообщение</string>
+    <string name="other_ads_user">Другие\nобъявления</string>
+    <string name="send_mess">Отправить</string>
+    <string name="complain">Пожаловаться</string>
+    <string name="similar_adds">Похожие объявления</string>
+    <string name="no_sesid">Авторизируйтесь заново</string>
+    <string name="sign_in_to_submit_an_fav">Войдите, чтобы добавить в избранные</string>
+    <string name="mes_send">Сообщение отправлено</string>
+    <string name="mail_time_limit">Не более одного сообщения в %1$s секунд</string>
+    <string name="no_session">Время сессии истекло</string>
+    <string name="complin_send">Жалоба успешно принята</string>
+    <string name="title_activity_ad_map_position" translatable="false">AdMapPosition</string>
+    <string name="views">Просмотров:</string>
+    <string name="title_activity_picture">PictureActivity</string>
+    <string name="describe_the_reason_more">Опишите причину подробнее</string>
+    <string name="enter_the_reason_for_the_complaint">Укажите причину жалобы</string>
+    <string name="share_gl">Поделиться ссылкой на объявление</string>
+    <string name="invalid_heading">Неверная рубрика</string>
+    <string name="prohibited_product">Запрещенный товар/услуга</string>
+    <string name="add_not_relevant">Объявление не актуально</string>
+    <string name="invalid_address">Неверный адрес</string>
+    <string name="other">Другое</string>
+    <string name="facebook_app_id" translatable="false">221990662403274</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb221990662403274</string>
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="authorize_fb">Принять</string>
+    <string name="no_email">В вашем акаунте нет email адреса, введите его для продолжения:</string>
+    <string name="cancel">Отмена</string>
+    <string name="send">Отправить</string>
+    <string name="continue_app">Продолжить</string>
+    <string name="logout">Выйти</string>
+    <integer name="com_vk_sdk_AppId" translatable="false">7459911</integer>
+    <string name="add_fav_ad">Добавлено в избранные</string>
+    <string name="delete_fav_ad">Удалено из списка избранных</string>
+    <string name="my_profile">Мой профиль</string>
+    <string name="my_shop">Мой магазин</string>
+    <string name="favorite">Закладки</string>
+    <string name="message">Сообщения</string>
+    <string name="you_logout">Вы вышли из профиля</string>
+    <string name="dialog_log_out">Вы действительно хотите выйти?</string>
+    <string name="go_to_shops">К магазинам</string>
+    <string name="go_to_add">К объявлениям</string>
+    <string name="title_activity_all_ads_user" translatable="false">AllAdsUserActivity</string>
+    <string name="count_ads">Объявлений</string>
+    <plurals name="count_ads">
+        <item quantity="one">%1$s объявление</item>
+        <item quantity="few">%1$s объявления</item>
+        <item quantity="many">%1$s объявлений
+    </item>
+        <item quantity="other">%1$s объявлений</item>
+    </plurals>
+    <string name="ads">Объявлений:</string>
+    <string name="last_log">Последний вход\n%1$s</string>
+    <string name="title_activity_filters">Фильтры</string>
+    <string name="returned">Вернуться</string>
+    <string name="complain_confirm">Ваша жалоба принята!\nСпасибо за ваше замечание!</string>
+    <string name="location">Местоположение</string>
+    <string name="adress">Укажите адрес</string>
+    <string name="Category">Категория</string>
+    <string name="with_photo">Только с фото</string>
+    <string name="view_ads">Вид</string>
+    <string name="list_view">Список</string>
+    <string name="view_grid">Таблица</string>
+    <string name="result_filter">Результатов:</string>
+    <string name="title_activity_locations" translatable="false">LocationsActivity</string>
+    <string name="city">Город</string>
+    <string name="text_empty_list_locations">Список пуст</string>
+    <string name="selectLocation">Выбор региона</string>
+    <string name="selectLocAll">По всем странам</string>
+    <string name="region">регион</string>
+    <string name="cantry">страна</string>
+    <string name="selectRegionAll">По всему региону</string>
+    <string name="selectCantryAll">По всей стране</string>
+    <string name="selectCantry">По всем странам</string>
+    <string name="title_activity_category" translatable="false">CategoryActivity</string>
+    <string name="select_category">Выбрать категорию</string>
+    <string name="all_categ">Все категории</string>
+    <string name="all_in">Все в</string>
+    <string name="more">от</string>
+    <string name="less">до</string>
+    <string name="more_les">&lt;font color="#9e9e9e">от&lt;/font> &lt;b>%1$s&lt;/b> &lt;font color="#9e9e9e">до&lt;/font> &lt;b>%2$s&lt;/b></string>
+    <string name="date_ads">с &lt;font color="#00CCDB">%1$s&lt;/font> до &lt;font color="#00CCDB">%2$s&lt;/font></string>
+    <string name="and_more">&lt;font color="#9e9e9e">от&lt;/font> &lt;b>%1$s&lt;/b> &lt;font color="#9e9e9e">и более&lt;/font></string>
+    <string name="and_less">&lt;font color="#9e9e9e">до&lt;/font> &lt;b>%1$s&lt;/b></string>
+    <string name="ok">Ок</string>
+    <string name="you_login">Вы вошли в профиль</string>
+    <string name="not_active">Акаунт не активирован</string>
+    <string name="info_complit_email">Для завершения регистрации введите Вашу электронную почту</string>
+    <string name="title_activity_social_confirm">SocialConfirmActivity</string>
+    <string name="pass_confirm">Пользователь с таким e-mail адресом уже зарегистрирован</string>
+    <string name="acaunt_not_active">Данный аккаунт неактивирован, перейдите по ссылке отправленной вам в письме.</string>
+    <string name="price">Цена</string>
+    <string name="no_matter">Не важно</string>
+    <string name="extra">Дополнительно</string>
+    <string name="title_activity_list_all_filter" translatable="false">ListActivityAllFilter</string>
+    <string name="search_more_words">Введите более одного символа</string>
+    <string name="search_more_words_shop">Введите более двух символов</string>
+    <string name="ads_empty">Объявлений не найдено</string>
+    <string name="shops_empty">Магазинов не найдено</string>
+    <string name="my_tools">Настройки</string>
+    <string name="my_ads">Мои объявления</string>
+    <string name="my_payments">Мои платежи</string>
+    <string name="exit_menu">Выход</string>
+    <string name="description">Описание</string>
+
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="LOADING" translatable="false">Loading...</string>
+    <string name="yes_logout">Да, выйти!</string>
+    <string name="title_activity_my_payments">MyPaymentsActivity</string>
+    <string name="text_balanse">Баланс:</string>
+    <string name="number_tr">Транзакция №%1$d</string>
+    <string name="pay_svc_title">Покупка услуги &lt;font color="#027db9">%1$s&lt;/font></string>
+    <string name="title_activity_tools">Редактировать учетную запись</string>
+    <string name="name">Имя</string>
+    <string name="number_phone">Номер телефона</string>
+    <string name="select_city">Выберите город</string>
+    <string name="enter_name">Введите имя</string>
+    <string name="edit_photo">Редактировать фото</string>
+    <string name="submint">Принять</string>
+    <string name="edit_phone">Введите номер телефона</string>
+    <string name="edit_email">Изменить email</string>
+    <string name="edit_password">Изменить пароль</string>
+    <string name="current_email">Текущий email</string>
+    <string name="save">Сохранить</string>
+    <string name="title_activity_change_password">Изменить пароль</string>
+    <string name="current_pass">Текущий пароль</string>
+    <string name="new_pass">Новый пароль</string>
+    <string name="change_pass">Вы успешно изменили пароль</string>
+    <string name="current_password_wrong">Не верный текущий пароль</string>
+    <string name="title_activity_change_email">Изменить email</string>
+    <string name="new_email">Новый email</string>
+    <string name="change_email">На ваш email высланы инструкции для подтверждения изменений</string>
+    <string name="social_alredy_another_user">Такой акаунт уже привязан к другому пользователю</string>
+    <string name="title_activity_my_ad">Мои объявления</string>
+    <string name="view_ad">Просмотров:</string>
+    <string name="view_phone">Просмотров номера:</string>
+    <string name="view_mess">Сообщений:</string>
+    <string name="up_ad">Поднять</string>
+    <string name="promotion">Рекламировать</string>
+    <string name="edit">Редактировать</string>
+    <string name="deactive">Деактивировать</string>
+    <string name="share">Поделиться</string>
+    <string name="refresh">Обновить</string>
+    <string name="activate_post">Активировать</string>
+    <string name="active">Активные</string>
+    <string name="no_active">Неактивные</string>
+    <string name="title_moderation">На модерации</string>
+    <string name="error_invalid_phone">Не верный формат телефона</string>
+    <string name="user_data_save">Данные успешно обновлены</string>
+    <string name="delete_post">Удалить</string>
+    <string name="item_up_free">Вы успешно подняли объявление</string>
+    <string name="item_deactivate">Объявление снято с публикации</string>
+    <string name="item_activate">Объявление активно</string>
+    <string name="item_delete">Вы удалили объявление</string>
+    <string name="refresh_add">Вы обновили объявление</string>
+    <string name="dialog_delet">Вы действительно хотите удалить это объявление?</string>
+    <string name="title_activity_add_ad">Создать объявление</string>
+    <string name="add_photo">Добавить</string>
+    <string name="aukcion">Торг</string>
+    <string name="posting_add">Опубликовать</string>
+    <string name="title_activity_select_on_map">SelectOnMap</string>
+    <string name="error_get_adress">Ошибка получения адреса</string>
+    <string name="edit_ad">Изменить</string>
+    <string name="as_shop">от магазина</string>
+    <!--ошибки при подаче-->
+    <string name="error_title">Не менее 5 и не более 70 символов</string>
+    <string name="error_descr">Не менее 12 и не более 4000 символов</string>
+
+    <string name="error_title_shop">Не менее 6 символов</string>
+    <string name="error_descr_shop">Не менее 12 символов</string>
+
+    <string name="error_emty_text">Поле не может быть пустым</string>
+    <string name="error_emty_fild">Не все обязательные поля заполнены</string>
+    <string name="sign_in_to_submit_an_ad">Войдите, чтобы подать объявление</string>
+    <string name="add_successfully_submitted">Объявление успешно создано</string>
+    <string name="add_successfully_edit">Объявление успешно изменено</string>
+    <string name="title_activity_dialogs" translatable="false">DialogsActivity</string>
+    <string name="no_mess">У Вас пока нет сообщений</string>
+    <string name="title_activity_advertising">Рекламировать объявление</string>
+    <string name="title_shop_advertising">Рекламировать магазин</string>
+    <string name="bye_adv">Приобрести</string>
+    <string name="info_bye_adv">*Оплата производится с личного счета.</string>
+    <string name="error_buy_svc">Услуга или объявление не выбраны</string>
+    <string name="success_pay">Оплата прошла успешно</string>
+    <string name="write_mess_in_chat">Написать сообщение...</string>
+    <string name="today">Сегодня</string>
+    <string name="yesterday">Вчера</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="asept">Применить</string>
+    <string name="web_site">Веб-сайт</string>
+    <string name="contakts">Контакты</string>
+    <string name="no_shop">У Вас пока нет магазина</string>
+    <string name="create_shop">Создать</string>
+    <string name="title_activity_main2" translatable="false">Main2Activity</string>
+    <string name="title_shop">Название магазина</string>
+    <string name="description_shop">Описание</string>
+    <string name="icq_text">ICQ</string>
+    <string name="skype_text">Skype</string>
+    <string name="odnoklasniki">Одноклассники</string>
+    <string name="facebook">Facebook</string>
+    <string name="vk">Вконтакте</string>
+    <string name="link">Ссылка</string>
+    <string name="shop_in_moderation">Вы успешно открыли магазин &lt;b>%1$s&lt;/b>. После проверки модератором ваш магазин будет активирован.</string>
+    <string name="shop_in_moderation_edit">Вы успешно внесли изменения в магазин &lt;b>%1$s&lt;/b>. После проверки модератором ваш магазин снова будет активирован.</string>
+    <string name="yandex_metrica_kay" translatable="false">1807a2d4-f83f-4e39-8402-2c17e1153548</string>
+    <string name="heaven_knows">не известно</string>
+    <string name="title_ad">Заголовок</string>
+    <string name="add_period_20s">Не более одного объявления в 20 секунд</string>
+    <string name="php_upload_err_ini_size">Выбранное фото превышает допустипый размер</string>
+    <string name="send_complain">Отправить жалобу</string>
+    <string name="history_pay">История</string>
+    <string name="accept_adr">Принять адрес</string>
+    <string name="title_activity_verification_phone">Подтверждение номера телефона</string>
+    <string name="write_phone">Введите свой номер телефона</string>
+    <string name="further">Далее</string>
+    <string name="text_confirm_profile"><![CDATA[Мы заботимся о безопасности на нашей доске объявлений, поэтому просим наших пользователей подтвердить их учетные записи. Это <b>быстро, безопасно и бесплатно</b> - нужно всего лишь ввести код из SMS, отправленного Вам на телефон. <br/><br/>Обратите внимание: Ваш номер телефона не будет в открытом доступе (только если Вы не укажите его в контактах в Ваших объявлениях). Мы будем использовать его исключительно для отправки Вам кода подтверждения]]></string>
+    <string name="title_activity_confirm_phone" translatable="false">ConfirmPhoneActivity</string>
+    <string name="please_put_code">Пожалуйста, введите код, отправленный на Ваш номер</string>
+    <string name="code">Введите код</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="repid_code">Отправить код еще раз</string>
+    <string name="send_code">На Ваш номер телефона выслан смс код, введите его в соответствующее поле.</string>
+    <string name="wrong_code">Не верный код</string>
+    <string name="user_email_phone_inuse">Пользователь с таким email или телефоном есть в базе</string>
+    <string name="phone_number_wrong">Некорректный номер телефона</string>
+    <string name="title_activity_category_shop">Категории магазинов</string>
+    <string name="confirm_registre">Завершить регистрацию</string>
+    <string name="shops_cats_empty">Не указали категории для магазина</string>
+    <!--<string name="count_shops">Магазинов</string>-->
+    <plurals name="count_shops">
+        <item quantity="one">%1$d магазин</item>
+        <item quantity="few">%1$d магазина</item>
+        <item quantity="many">%1$d магазинов
+    </item>
+        <item quantity="other">%1$d магазинов</item>
+    </plurals>
+
+    <plurals name="count_month">
+        <item quantity="one">%1$d месяц</item>
+        <item quantity="few">%1$d месяца</item>
+        <item quantity="two">%1$d месяца</item>
+        <item quantity="many">%1$d месяцев</item>
+        <item quantity="other">%1$d месяц</item>
+    </plurals>
+    <plurals name="count_week">
+        <item quantity="one">%1$d неделя</item>
+        <item quantity="few">%1$d недели</item>
+        <item quantity="two">%1$d недели</item>
+        <item quantity="many">%1$d недель</item>
+        <item quantity="other">%1$d неделя</item>
+    </plurals>
+    <plurals name="count_days">
+        <item quantity="one">%1$d день</item>
+        <item quantity="few">%1$d дня</item>
+        <item quantity="two">%1$d дня</item>
+        <item quantity="many">%1$d дней</item>
+        <item quantity="other">%1$d день</item>
+    </plurals>
+    <plurals name="count_years">
+        <item quantity="one">%1$d год</item>
+        <item quantity="few">%1$d года</item>
+        <item quantity="two">%1$d года</item>
+        <item quantity="many">%1$d лет</item>
+        <item quantity="other">%1$d год</item>
+    </plurals>
+    <string name="shop_not_active">Ваш магазин &lt;b>%1$s&lt;/b> был деактивирован модератором.
+Для выяснения причины деактивации обратитесь к администратору.</string>
+    <string name="shop_block">Ваш магазин &lt;b>%1$s&lt;/b> был заблокирован модератором,
+по следующей причине: &lt;b>%2$s&lt;/b></string>
+    <string name="low_balance">Недостаточно средств на счету</string>
+    <string name="shop_limit">Достигнут лимит активных объявлений для Вашего магазина, приобретите новый абонемент</string>
+    <string name="title_abonement">Текущий тариф: &lt;b>%1$s&lt;/b></string>
+    <string name="period_abonement">Действует до &lt;b>%1$s&lt;/b></string>
+    <string name="on_time">бессрочно</string>
+    <string name="ad_availability_shop">Доступно объявлений &lt;b>%1$s&lt;/b> из %2$s</string>
+    <string name="change">изменить</string>
+    <string name="no_abonement">Нет действующих абонементов</string>
+    <string name="title_activity_abonement_shop">Абонементы</string>
+    <string name="items_abonement"> %1$d объявлений</string>
+    <string name="import_adds">Импорт объявлений</string>
+    <string name="mark_in_catalog">Выделение в каталоге</string>
+    <string name="fix_adds">Закрепление в каталоге</string>
+    <string name="to_pay">К оплате: %1$s</string>
+    <string name="abonement_is_already_active">Данный абонемент уже используется</string>
+    <string name="tpl_title_hint">Будет сгенерирован</string>
+    <string name="user_block">Пользователь заблокирован по причине: %1$s</string>
+    <string name="limit_category">Ограничение подочи объявлений в этой категории</string>
+    <string name="no_messages">Больше сообщений нет</string>
+    <string name="email_or_phone">Email или телефон</string>
+    <string name="info_complit_email_and_phone">Для завершения регистрации введите электронную почту и телефон</string>
+    <string name="personal_account">Личный счет</string>
+    <string name="permission_phone_liqpay_need">Данная система оплаты требует дополнительного разрешения!</string>
+    <string name="title_activity_refill">Пополнение счета</string>
+    <string name="select_method">Выберите способ оплаты</string>
+    <string name="period_publication">Срок публикации</string>
+    <string name="limit_sms">Лимит запроса смс исчерпан</string>
+    <string name="id_post">ID:</string>
+    <string name="user_canceled">The user canceled.</string>
+    <string name="sum_not_empty">Cумма должна быть больше нуля</string>
+</resources>
+

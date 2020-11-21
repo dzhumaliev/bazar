@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minHeight="@dimen/item_tips"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvTitleParam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|start"
+        android:paddingTop="@dimen/all_padding"
+        android:paddingBottom="@dimen/all_padding"
+        android:layout_centerVertical="true"
+        android:textColor="@color/color_city" />
+
+    <TextView
+        android:id="@+id/tvValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/tvTitleParam"
+        android:gravity="center|end"
+        android:textStyle="bold"
+        android:textDirection="locale"
+        android:textAlignment="viewEnd"
+        android:textSize="@dimen/size_text_edit_email"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black" />
+</merge>

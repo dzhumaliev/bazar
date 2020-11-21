@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="3dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:id="@+id/text_title"
+            android:text="@string/number_phone"
+            android:textColor="@color/color_hint_search"
+            android:textSize="@dimen/size_text_info" />
+        <TextView
+            android:id="@+id/text_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_error_text"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingStart="@dimen/radius_error_bg"
+            android:paddingEnd="@dimen/radius_error_bg"
+            android:text="@string/error_invalid_phone"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <solutions.isky.gaurangarevolution.presentation.view.MyCustomEditText
+        android:id="@+id/et_phone_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_phone"
+        android:layout_weight="1"
+        android:inputType="phone"
+        android:textColor="@color/color_btn_login"
+        android:textColorHint="@color/color_hint_search"
+        app:x_disableClear="true"
+        app:x_disableEmoji="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/btn_add_phone"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="@dimen/all_padding"
+        android:paddingBottom="@dimen/all_padding"
+        android:paddingStart="@dimen/all_padding"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_add_circle_black_24dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/divider_payments"></View>
+</merge>

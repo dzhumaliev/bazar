@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:paddingBottom="@dimen/fab_margin"
+  android:paddingStart="@dimen/all_padding"
+  android:paddingEnd="@dimen/all_padding"
+  android:background="@android:color/white"
+  app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  tools:context=".presentation.ui.my_shop.MyShop"
+  tools:showIn="@layout/activity_my_shop">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <requestFocus></requestFocus>
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <requestFocus></requestFocus>
+
+      <ImageView
+        android:id="@+id/img_photo_shop"
+        android:layout_width="@dimen/width_img_shop"
+        android:layout_height="@dimen/height_img_ad"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:background="#f8f8f8"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_placeholder_shop"/>
+
+      <ImageView
+        android:id="@+id/img_load_logo_shop"
+        android:layout_width="@dimen/size_icon_menu"
+        android:layout_height="@dimen/size_icon_menu"
+        android:layout_alignEnd="@+id/img_photo_shop"
+        android:layout_below="@+id/img_photo_shop"
+        android:paddingTop="@dimen/all_padding"
+        android:paddingStart="@dimen/all_padding"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_file_upload"/>
+
+      <ImageView
+        android:id="@+id/img_clear_logo"
+        android:layout_width="@dimen/size_icon_menu"
+        android:layout_height="@dimen/size_icon_menu"
+        android:layout_alignStart="@+id/img_photo_shop"
+        android:layout_below="@+id/img_photo_shop"
+        android:paddingTop="@dimen/all_padding"
+        android:paddingEnd="@dimen/all_padding"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_delete_avatar"/>
+
+      <ProgressBar
+        android:id="@+id/progress_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:clickable="true"
+        android:visibility="gone"
+        android:background="@drawable/bg_abonement_check"
+        android:padding="@dimen/all_padding"
+        android:id="@+id/view_abonement"
+        android:layout_height="wrap_content">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:orientation="vertical"
+          android:visibility="gone"
+          android:id="@+id/info_abonement"
+          android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/title_abonement"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/period_abonement"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/ad_availability"
+            android:layout_height="wrap_content" />
+      </LinearLayout>
+      <TextView
+          android:layout_width="match_parent"
+          android:id="@+id/no_abonement"
+          android:gravity="center"
+          android:visibility="gone"
+          android:textColor="@android:color/black"
+          android:textStyle="bold"
+          android:textSize="@dimen/fab_margin"
+          android:text="@string/no_abonement"
+          android:layout_height="wrap_content" />
+      <TextView
+          android:layout_width="match_parent"
+          android:text="@string/change"
+          android:textStyle="bold"
+          android:gravity="end"
+          android:textSize="12dp"
+          android:layout_marginEnd="@dimen/fab_margin"
+          android:textColor="@color/color_text_activity"
+          android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingTop="3dp"
+      android:orientation="vertical">
+      <TextView
+        android:id="@+id/title_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:text="@string/title_shop"
+        android:textColor="@color/color_hint_search"
+        android:textSize="@dimen/size_text_info"/>
+      <TextView
+        android:id="@+id/title_shop_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/radius_error_bg"
+        android:paddingEnd="@dimen/radius_error_bg"
+        android:background="@drawable/bg_error_text"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/error_invalid_phone"
+        android:textColor="@android:color/white"
+        android:visibility="gone"/>
+    </LinearLayout>
+
+
+    <solutions.isky.gaurangarevolution.presentation.view.MyCustomEditText
+      android:id="@+id/et_name_shop"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="@string/title_shop"
+      android:inputType="text"
+      android:maxLines="1"
+      android:singleLine="true"
+      android:textColor="@color/color_btn_login"
+      android:textColorHint="@color/color_hint_search"
+      app:x_disableClear="true"
+      app:x_disableEmoji="true"/>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/divider_payments"></View>
+
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingTop="3dp"
+      android:orientation="vertical">
+      <TextView
+        android:id="@+id/descr_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:text="@string/description_shop"
+        android:textColor="@color/color_hint_search"
+        android:textSize="@dimen/size_text_info"/>
+      <TextView
+        android:id="@+id/descr_shop_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/radius_error_bg"
+        android:paddingEnd="@dimen/radius_error_bg"
+        android:background="@drawable/bg_error_text"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/error_invalid_phone"
+        android:textColor="@android:color/white"
+        android:visibility="gone"/>
+    </LinearLayout>
+    <solutions.isky.gaurangarevolution.presentation.view.MyCustomEditText
+      android:id="@+id/et_descr"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="start"
+      android:hint="@string/description_shop"
+      android:maxLines="3"
+      android:textColor="@color/color_btn_login"
+      android:textColorHint="@color/color_hint_search"
+      app:x_disableClear="true"
+      app:x_disableEmoji="true"/>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/divider_payments"></View>
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingTop="3dp"
+      android:id="@+id/view_shop_categ"
+      android:orientation="vertical">
+      <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_btn_login"
+        android:id="@+id/et_cat"
+        android:background="@android:color/transparent"
+        android:gravity="start|center_vertical"
+        android:text="@string/select_category"
+        android:textAllCaps="false"
+        android:textColor="@color/selector_btn_stroke"/>
+      <com.zhy.view.flowlayout.TagFlowLayout
+        xmlns:zhy="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/id_flowlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        zhy:max_select="-1"
+        zhy:tag_gravity="left"
+        >
+      </com.zhy.view.flowlayout.TagFlowLayout>
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/divider_payments"></View>
+    </LinearLayout>
+
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingTop="3dp"
+      android:orientation="vertical">
+      <TextView
+        android:id="@+id/city_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:text="@string/city"
+        android:textColor="@color/color_hint_search"
+        android:textSize="@dimen/size_text_info"/>
+      <TextView
+        android:id="@+id/city_shop_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/radius_error_bg"
+        android:paddingEnd="@dimen/radius_error_bg"
+        android:background="@drawable/bg_error_text"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/error_invalid_phone"
+        android:textColor="@android:color/white"
+        android:visibility="gone"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <solutions.isky.gaurangarevolution.presentation.view.MyCustomEditText
+        android:id="@+id/et_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:editable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/select_city"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@color/color_btn_login"
+        android:textColorHint="@color/color_hint_search"
+        app:x_disableClear="true"
+        app:x_disableEmoji="true"/>
+
+      <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_keyboard_arrow_right"/>
+    </LinearLayout>
+
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/divider_payments"></View>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/fab_margin"
+      android:text="@string/adress"
+      android:textColor="@color/color_hint_search"
+      android:textSize="@dimen/size_text_info"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <solutions.isky.gaurangarevolution.presentation.view.MyCustomEditText
+        android:id="@+id/et_adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:editable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/adress"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@color/color_btn_login"
+        android:textColorHint="@color/color_hint_search"
+        app:x_disableClear="true"
+        app:x_disableEmoji="true"/>
+
+      <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_keyboard_arrow_right"/>
+    </LinearLayout>
+
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/divider_payments"></View>
+
+    <solutions.isky.gaurangarevolution.presentation.view.MyPhonesLayut
+      android:id="@+id/my_phone_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:animateLayoutChanges="true"></solutions.isky.gaurangarevolution.presentation.view.MyPhonesLayut>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/fab_margin"
+      android:text="@string/icq_text"
+      android:textColor="@color/color_hint_search"
+      android:textSize="@dimen/size_text_info"/>
+
+    <solutions.isky.gaurangarevolution.presentation.view.MyCustomEditText
+      android:id="@+id/et_icq"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="start"
+      android:hint="@string/icq_text"
+      android:inputType="text"
+      android:maxLines="1"
+      android:textColor="@color/color_btn_login"
+      android:textColorHint="@color/color_hint_search"
+      app:x_disableClear="true"
+      app:x_disableEmoji="true"/>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/divider_payments"></View>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/fab_margin"
+      android:text="@string/skype_text"
+      android:textColor="@color/color_hint_search"
+      android:textSize="@dimen/size_text_info"/>
+
+    <solutions.isky.gaurangarevolution.presentation.view.MyCustomEditText
+      android:id="@+id/et_skype"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="start"
+      android:hint="@string/skype_text"
+      android:inputType="text"
+      android:maxLines="1"
+      android:textColor="@color/color_btn_login"
+      android:textColorHint="@color/color_hint_search"
+      app:x_disableClear="true"
+      app:x_disableEmoji="true"/>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/divider_payments"></View>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/fab_margin"
+      android:text="@string/web_site"
+      android:textColor="@color/color_hint_search"
+      android:textSize="@dimen/size_text_info"/>
+
+    <solutions.isky.gaurangarevolution.presentation.view.MyCustomEditText
+      android:id="@+id/et_web_site"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="start"
+      android:hint="@string/web_site"
+      android:inputType="text"
+      android:maxLines="1"
+      android:textColor="@color/color_btn_login"
+      android:textColorHint="@color/color_hint_search"
+      app:x_disableClear="true"
+      app:x_disableEmoji="true"/>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/divider_payments"></View>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/fab_margin"
+      android:text="@string/odnoklasniki"
+      android:textColor="@color/color_hint_search"
+      android:textSize="@dimen/size_text_info"/>
+
+    <solutions.isky.gaurangarevolution.presentation.view.MyCustomEditText
+      android:id="@+id/et_ok"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="start"
+      android:hint="@string/link"
+      android:inputType="text"
+      android:maxLines="1"
+      android:textColor="@color/color_btn_login"
+      android:textColorHint="@color/color_hint_search"
+      app:x_disableClear="true"
+      app:x_disableEmoji="true"/>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/divider_payments"></View>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/fab_margin"
+      android:text="@string/facebook"
+      android:textColor="@color/color_hint_search"
+      android:textSize="@dimen/size_text_info"/>
+
+    <solutions.isky.gaurangarevolution.presentation.view.MyCustomEditText
+      android:id="@+id/et_fb"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="start"
+      android:hint="@string/link"
+      android:inputType="text"
+      android:maxLines="1"
+      android:textColor="@color/color_btn_login"
+      android:textColorHint="@color/color_hint_search"
+      app:x_disableClear="true"
+      app:x_disableEmoji="true"/>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/divider_payments"></View>
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/fab_margin"
+      android:text="@string/vk"
+      android:textColor="@color/color_hint_search"
+      android:textSize="@dimen/size_text_info"/>
+
+    <solutions.isky.gaurangarevolution.presentation.view.MyCustomEditText
+      android:id="@+id/et_vk"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="start"
+      android:hint="@string/link"
+      android:inputType="text"
+      android:maxLines="1"
+      android:textColor="@color/color_btn_login"
+      android:textColorHint="@color/color_hint_search"
+      app:x_disableClear="true"
+      app:x_disableEmoji="true"/>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/divider_payments"></View>
+
+    <Button
+        android:id="@+id/btn_svc_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_tips"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_below="@+id/text_"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:paddingStart="@dimen/radius_btn_login"
+        android:paddingEnd="@dimen/radius_btn_login"
+        android:background="@drawable/bg_btn_my_ads"
+        android:stateListAnimator="@null"
+        android:text="Продвинуть магазин"
+        android:textAllCaps="false"
+        android:textColor="@color/selector_btn_text_sort"
+        android:textSize="@dimen/size_text_loin"/>
+    <Button
+      android:id="@+id/btn_create_shop"
+      android:layout_width="wrap_content"
+      android:layout_height="@dimen/hight_btn_login"
+      android:layout_marginTop="@dimen/fab_margin"
+      android:layout_below="@+id/text_"
+      android:layout_centerHorizontal="true"
+      android:layout_gravity="center"
+      android:paddingStart="@dimen/radius_btn_login"
+      android:paddingEnd="@dimen/radius_btn_login"
+      android:background="@drawable/bg_btn_sort"
+      android:stateListAnimator="@null"
+      android:text="@string/create_shop"
+      android:textAllCaps="false"
+      android:textColor="@color/selector_btn_text_sort"
+      android:textSize="@dimen/size_text_loin"/>
+
+
+  </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_rl"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/heigh_nav_bar"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:id="@+id/rl_no_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ImageView
+            app:srcCompat="@drawable/ic_logo"
+            android:layout_width="220dp"
+            android:tint="@color/color_btn_login"
+            android:adjustViewBounds="true"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:id="@+id/im_avatar"
+                android:layout_width="@dimen/size_avatar_bar"
+                android:layout_centerHorizontal="true"
+                android:layout_height="@dimen/size_avatar_bar" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/im_avatar"
+                android:ellipsize="end"
+                android:lines="1"
+                android:layout_centerHorizontal="true"
+                android:maxLines="1"
+                android:textColor="@color/color_btn_login"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

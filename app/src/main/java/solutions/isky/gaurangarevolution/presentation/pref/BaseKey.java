@@ -1,0 +1,22 @@
+package solutions.isky.gaurangarevolution.presentation.pref;
+
+/**
+ * Created by Serzhik on 21.04.2016.
+ */
+abstract class BaseKey {
+
+    private final String mStr;
+    private final Class mType;
+    private final Object mDefaultValue;
+
+    protected <T> BaseKey(String str, Class<T> type, T defaultValue) {
+        mStr = str;
+        mType = type;
+        mDefaultValue = defaultValue;
+    }
+
+    public Object getDefaultValue() { return mDefaultValue; }
+    public Class getType() { return mType; }
+    public String toString() { return mStr; }
+
+}

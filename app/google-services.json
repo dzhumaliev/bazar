@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "52559146955",
+    "firebase_url": "https://bazarkz.firebaseio.com",
+    "project_id": "bazarkz",
+    "storage_bucket": "bazarkz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52559146955:android:e0aa9a097a5fbf0a4a104e",
+        "android_client_info": {
+          "package_name": "bazar.kz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52559146955-kvjedv0eealk5a25l9utluandfcnlk6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr327ILiA5jx6sQUI5kMR3NwC2nsmvZ8g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52559146955-kvjedv0eealk5a25l9utluandfcnlk6b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "52559146955-6su5su3v10qncgkdisj4karf43hsta2p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "kz.bazar"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52559146955:android:f6edd108ded40a484a104e",
+        "android_client_info": {
+          "package_name": "kz.bazar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52559146955-kvjedv0eealk5a25l9utluandfcnlk6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr327ILiA5jx6sQUI5kMR3NwC2nsmvZ8g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52559146955-kvjedv0eealk5a25l9utluandfcnlk6b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "52559146955-6su5su3v10qncgkdisj4karf43hsta2p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "kz.bazar"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

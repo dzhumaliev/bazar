@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="@color/color_price_list" />
+
+    <size
+        android:width="@dimen/all_padding"
+        android:height="@dimen/all_padding"/>
+</shape>

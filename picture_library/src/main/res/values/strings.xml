@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Gauranga</string>
+    <string name="picture_camera_roll">Все фото</string>
+    <string name="cancel">Отмена</string>
+    <string name="picture_take_picture">Сделать фото</string>
+    <string name="picture_rule">Нет изображений</string>
+    <string name="picture_message_max_num">Вы можете выбрать не более %1$s фото</string>
+    <string name="picture_min_video_num" translatable="false">Video Selection Cannot%1$sNumber</string>
+    <string name="picture_preview">Предпросмотр</string>
+    <string name="picture_please">Пожалуйста подождите...</string>
+    <string name="picture_done_front_num">%1$d/%2$d Ok</string>
+    <string name="picture_completed">Принять</string>
+    <string name="picture_done">Ok</string>
+    <string name="picture_please_select">Выберите</string>
+    <string name="picture_empty_title">Нет фото</string>
+    <string name="picture_empty_audio_title" translatable="false">No audio file</string>
+    <string name="picture_empty">Вы можете использовать свою камеру для съемки фотографий</string>
+    <string name="picture_audio_empty" translatable="false">You can use system recordings to record audio</string>
+    <string name="picture_min_img_num">Количество выбранных изображений не может превышать %1$s</string>
+    <string name="gif_tag" translatable="false">gif</string>
+    <string name="picture_jurisdiction">Доступ к карте памяти запрещен</string>
+    <string name="picture_camera">Доступ к камере запрещен</string>
+    <string name="picture_audio" translatable="false">Access to system recording permission denied</string>
+    <string name="picture_video_toast" translatable="false">Video not Preview</string>
+    <string name="picture_record_video" translatable="false">Record Video</string>
+    <string name="picture_photograph">Фотография</string>
+    <string name="picture_long_chart">Длинный</string>
+    <string name="picture_warning">Медиа файлы!</string>
+    <string name="picture_prompt" translatable="false">Prompt</string>
+    <string name="picture_prompt_content">Вы хотите сохранить фотографии на свой телефон?</string>
+    <string name="picture_save_error">Не удалось сохранить изображение</string>
+    <string name="picture_save_success">Изображение сохранено</string>
+    <string name="picture_all_audio" translatable="false">All audio</string>
+    <string name="picture_tape" translatable="false">Tape</string>
+    <string name="picture_play_audio" translatable="false">Play</string>
+    <string name="picture_stop_audio" translatable="false">Stop</string>
+    <string name="picture_quit_audio" translatable="false">Quit</string>
+    <string name="picture_pause_audio" translatable="false">Pause</string>
+    <string name="picture_error">Изображение повреждено</string>
+    <string name="picture_camera_error">Ошибка при создании файла</string>
+    <string name="picture_confirm">Отмена</string>
+    <string name="picture_video_error" translatable="false">The video is corrupted</string>
+    <string name="picture_audio_error" translatable="false">The audio is corrupted</string>
+    <string name="picture_message_video_max_num" translatable="false">You can choose%1$s videos at most</string>
+</resources>

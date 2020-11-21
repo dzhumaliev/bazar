@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_error_text"
+            android:paddingStart="@dimen/radius_error_bg"
+            android:paddingEnd="@dimen/radius_error_bg"
+            android:text="error"
+            android:visibility="invisible"
+            android:textColor="@android:color/white" />
+
+        <solutions.isky.gaurangarevolution.presentation.view.MyCustomEditText
+            android:id="@+id/text_descr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#00000000"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_btn_login" />
+    </LinearLayout>
+</merge>

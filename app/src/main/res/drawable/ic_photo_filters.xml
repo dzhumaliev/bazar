@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+
+    <path
+        android:name="Path 1"
+        android:fillColor="@color/color_price_list"
+        android:strokeColor="@color/color_price_list"
+        android:strokeWidth="1"
+        android:pathData="M87.8,35.98 L87.8,35.97 L80.42,28.36 C78.3,26.17,74.77,26.29,72.81,28.61
+L50.85,54.64 L32.08,38.22 C29.88,36.3,26.55,36.58,24.71,38.84 L20.48,44.04
+L8.2,59.13 L1.5,67.36 L1.5,87.38 C1.5,91.31,4.69,94.5,8.62,94.5 L87.38,94.5
+C91.31,94.5,94.5,91.31,94.5,87.38 L94.5,42.88 Z" />
+    <path
+        android:name="Path 2"
+        android:strokeColor="@color/color_price_list"
+        android:strokeWidth="1"
+        android:pathData="M84.43,8.14 L11.57,8.14 C9.71,8.14,8.2,9.65,8.2,11.51 L8.2,59.13 L20.48,44.04
+L24.71,38.84 C26.55,36.58,29.88,36.3,32.08,38.22 L50.85,54.64 L72.81,28.61
+C74.77,26.29,78.3,26.17,80.42,28.36 L87.8,35.97 L87.8,11.51
+C87.8,9.65,86.29,8.14,84.43,8.14 Z" />
+    <path
+        android:name="Path 3"
+        android:fillColor="@color/color_price_list"
+        android:strokeColor="@color/color_price_list"
+        android:strokeWidth="1"
+        android:pathData="M94.46,7.97 C94.15,4.35,91.09,1.5,87.38,1.5 L8.62,1.5
+C4.69,1.5,1.5,4.69,1.5,8.62 L1.5,67.36 L8.2,59.13 L8.2,11.51
+C8.2,9.65,9.71,8.14,11.57,8.14 L84.43,8.14 C86.29,8.14,87.8,9.65,87.8,11.51
+L87.8,35.98 L94.5,42.88 L94.5,8.62 C94.5,8.4,94.49,8.19,94.46,7.97 Z" />
+    <path
+        android:name="Path 4"
+        android:strokeColor="@color/color_price_list"
+        android:strokeWidth="1"
+        android:pathData="M87.8,35.97 L80.42,28.36 C78.3,26.17,74.77,26.29,72.81,28.61 L50.85,54.64
+L32.08,38.22 C29.88,36.3,26.55,36.58,24.71,38.84 L20.48,44.04 L8.2,59.13" />
+    <path
+        android:name="Path 5"
+        android:fillColor="@color/color_price_list"
+        android:strokeColor="@color/color_price_list"
+        android:strokeWidth="1"
+        android:pathData="M24.75,13.84 C20.82,13.84,17.63,17.03,17.63,20.96
+C17.63,24.89,20.82,28.08,24.75,28.08 C28.68,28.08,31.87,24.89,31.87,20.96
+C31.87,17.03,28.68,13.84,24.75,13.84 Z" />
+    <path
+        android:name="Path 6"
+        android:strokeColor="@color/color_price_list"
+        android:strokeWidth="1"
+        android:pathData="M20.48,44.04 L20.48,44.47" />
+</vector>

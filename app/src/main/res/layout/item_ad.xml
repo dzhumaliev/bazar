@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/view_contetnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/all_padding"
+            android:gravity="center"
+            android:background="@drawable/bg_mark"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_ad"
+                    android:layout_width="@dimen/width_img_ad"
+                    android:layout_height="@dimen/height_img_ad"
+                    android:layout_margin="2dp"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:id="@+id/imageView_asop"
+                    android:layout_width="@dimen/size_icons"
+                    android:layout_height="@dimen/size_icons"
+                    android:layout_margin="@dimen/all_padding"
+                    android:layout_gravity="end|top"
+                    app:srcCompat="@drawable/ic_asop" />
+                <ImageView
+                    android:id="@+id/imageView_fund"
+                    android:layout_width="@dimen/size_icons"
+                    android:layout_height="@dimen/size_icons"
+                    android:layout_margin="@dimen/all_padding"
+                    android:layout_gravity="end|bottom"
+                    app:srcCompat="@drawable/ic_fund" />
+                <TextView
+                    android:id="@+id/tv_premium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_premium"
+                    android:textColor="@android:color/white"
+                    android:maxLines="1"
+                    android:textSize="12sp"
+                    android:text="@string/premium" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/fab_margin"
+                android:layout_marginStart="@dimen/all_padding"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_title_ad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|start"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textSize="18sp"
+                        android:textAlignment="viewStart"
+                        android:text="Title_Titdhrer  eryeryyry ery eery yylr ery  ery yer"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/iv_star"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        app:srcCompat="@drawable/ic_star"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/iv_categ_ic"
+                        android:layout_width="@dimen/size_icons"
+                        android:layout_height="@dimen/size_icons"
+                        app:srcCompat="@drawable/ic_category"/>
+                    <TextView
+                        android:id="@+id/tv_Categ"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:layout_marginStart="@dimen/all_padding"
+                        android:textDirection="locale"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/color_city"
+                        android:maxLines="1"
+
+                        android:text="Categ" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/all_padding"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/iv_city_ic"
+                        android:layout_width="@dimen/size_icons"
+                        android:layout_height="@dimen/size_icons"
+                        app:srcCompat="@drawable/ic_city"/>
+                    <TextView
+                        android:id="@+id/tv_CityName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:layout_marginStart="@dimen/all_padding"
+                        android:maxLines="1"
+                        android:textDirection="locale"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/color_city"
+                        android:text="City"/>
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/tv_Price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+
+                    android:maxLines="1"
+                    android:gravity="bottom"
+                    android:layout_weight="1"
+                    android:textColor="@color/color_price_list"
+                    android:textSize="18sp"
+                    android:inputType="text"
+                    android:text="33 000 $"
+                    android:textDirection="ltr"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/all_padding"
+        android:layout_below="@+id/view_contetnt"
+        android:background="#e1e1e1"
+        android:layout_height="1dp"></View>
+    </RelativeLayout>

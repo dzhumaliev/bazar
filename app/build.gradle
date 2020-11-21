@@ -1,0 +1,174 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+apply plugin: 'realm-android'
+
+android {
+    signingConfigs {
+        release {
+            storeFile file('/Users/Android/Downloads/appkeyBazarKz')
+            storePassword 'bazarkz'
+            keyAlias = 'bazarKz'
+            keyPassword 'bazarkz'
+        }
+    }
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "bazar.kz"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled = true
+        renderscriptTargetApi 27 //must match target sdk and build tools
+        renderscriptSupportModeEnabled true
+        dataBinding {
+            enabled = true
+        }
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+        resConfigs "ru"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        pickFirst 'META-INF/rxjava.properties'
+    }
+    productFlavors {
+    }
+
+}
+realm {
+    syncEnabled = true
+}
+//repositories {
+//    mavenCentral()
+//    google()
+//
+//}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:support-compat:27.1.1'
+    implementation 'com.android.support:customtabs:27.1.1'
+    implementation 'com.android.support:animated-vector-drawable:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:design:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.google.dagger:dagger:2.14.1'
+    implementation 'com.google.dagger:dagger-android-support:2.14.1'
+    // if you use the support libraries
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.14.1'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.16'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.4.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    implementation 'com.facebook.stetho:stetho:1.5.0'
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+    implementation 'net.danlew:android.joda:2.9.9.4'
+    implementation 'com.android.support:multidex:1.0.2'
+    implementation 'com.arello-mobile:moxy:1.5.5'
+    implementation 'com.arello-mobile:moxy-app-compat:1.5.5'
+    annotationProcessor 'com.arello-mobile:moxy-compiler:1.5.5'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //fastadapter
+    implementation 'com.mikepenz:fastadapter:3.2.6@aar'
+    implementation 'com.mikepenz:fastadapter-commons:3.2.6@aar'
+    implementation 'com.mikepenz:fastadapter-extensions:3.2.6@aar'
+    implementation 'com.mikepenz:materialize:1.1.2@aar'
+    implementation 'com.mikepenz:itemanimators:1.0.1@aar'
+    implementation 'com.mikepenz.thirdparty:stickyheadersrecyclerview:0.4.4-SNAPSHOT@aar'
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    //cicerone
+    //implementation 'ru.terrakok.cicerone:cicerone:3.0.0'
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    implementation 'com.google.android.gms:play-services-places:16.1.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.firebase:firebase-core:16.0.9'
+    implementation 'com.google.firebase:firebase-messaging:18.0.0'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'me.relex:photodraweeview:1.1.3'
+    implementation 'me.relex:circleindicator:1.2.2@aar'
+    implementation 'com.facebook.fresco:fresco:1.12.0'
+    implementation 'com.eightbitlab:blurview:1.4.0'
+    implementation 'com.eightbitlab:supportrenderscriptblur:1.0.1'
+    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+    implementation 'com.vk:androidsdk:1.6.9'
+    implementation 'ru.ok:odnoklassniki-android-sdk:2.1.6'
+    implementation 'pl.openrnd.android:multi-level-listview:1.0.1'
+    implementation 'com.pnikosis:materialish-progress:1.0'
+    //implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.+'
+    implementation project(':picture_library1')
+    implementation 'com.github.omadahealth:swipy:1.2.3@aar'
+    // implementation 'com.google.android:flexbox:1.0.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    //implementation "me.henrytao:smooth-app-bar-layout:25.3.1.0"
+    // AppMetrica from maven central.
+    implementation 'com.yandex.android:mobmetricalib:3.1.0'
+    // Optional. Play Install Referrer library for better attribution.
+    implementation 'com.android.installreferrer:installreferrer:1.0'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.4@aar') {
+        transitive = true;
+    }
+    implementation 'com.hbb20:ccp:2.2.7'
+    implementation 'com.hyman:flowlayout-lib:1.1.2'
+    // implementation 'com.github.arcadefire:nice-spinner:1.3.4'
+    //implementation 'com.github.devlight.navigationtabstrip:navigationtabstrip:+'
+    implementation files('libs/paylibliqpay.jar.jar')
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+    implementation project(':cropper')
+    //paypal
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.16.0'
+    implementation 'com.yandex.money:checkout:2.2.1' //yandex.money
+    //implementation 'com.yandex.android:authsdk:2.1.0'
+}
+
+//com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/selector_btn_sort"></solid>
+    <corners android:radius="@dimen/radius_btn_login"></corners>
+    <stroke android:width="1dp" android:color="@color/color_price_list"></stroke>
+</shape>

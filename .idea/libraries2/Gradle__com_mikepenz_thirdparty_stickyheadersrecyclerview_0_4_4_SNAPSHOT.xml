@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.mikepenz.thirdparty:stickyheadersrecyclerview-0.4.4-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/stickyheadersrecyclerview-0.4.4-SNAPSHOT.aar/7c34f6a768174624868ecc11e79f3886/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/stickyheadersrecyclerview-0.4.4-SNAPSHOT.aar/7c34f6a768174624868ecc11e79f3886/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikepenz.thirdparty/stickyheadersrecyclerview/0.4.4-SNAPSHOT/1399ad550e93126df81d2257ef4b71f2d7ebb756/stickyheadersrecyclerview-0.4.4-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

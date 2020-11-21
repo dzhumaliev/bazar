@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="expandable_text"/>
+    <item type="id" name="ad_list"/>
+    <item type="id" name="list_dialog"/>
+    <item type="id" name="phone_list"/>
+    <item type="id" name="expand_collapse"/>
+    <item type="id" name="footer_adv"/>
+    <item type="id" name="header_adv"/>
+    <item type="id" name="header_payment"/>
+    <item type="id" name="item_payment"/>
+    <item type="id" name="item_location"/>
+    <item type="id" name="item_shop"/>
+    <item type="id" name="my_ad_item_active"/>
+    <item type="id" name="svc_model_item"/>
+    <item type="id" name="svc_abonement_item"/>
+    <item type="id" name="fastadapter_headeralladsuser_id"/>
+    <item type="id" name="fastadapter_income_generic_mess_item_id"/>
+    <item type="id" name="fastadapter_out_generic_mess_item_id"/>
+
+    <item type="id" name="subs_shop"/>
+    <item type="id" name="subs_user"/>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp">
+
+      <LinearLayout
+        android:id="@+id/bubble"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_data"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom">
+          <TextView
+            android:id="@+id/messageTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/all_padding"
+            android:layout_gravity="bottom"
+            android:gravity="end"
+            android:text="09.12"
+            android:textColor="#b3b3b3"
+            />
+        </LinearLayout>
+
+
+        <LinearLayout
+          android:id="@+id/linearLayout2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="@dimen/all_padding"
+          android:background="@drawable/bg_out_mess"
+          android:orientation="vertical"
+          app:layout_constraintRight_toRightOf="parent">
+
+          <RelativeLayout
+            android:id="@+id/view_poster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.facebook.drawee.view.SimpleDraweeView xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/img_post"
+              android:layout_width="@dimen/item_tips"
+              android:layout_height="@dimen/item_tips"
+              android:layout_centerVertical="true"
+              fresco:failureImage="@drawable/ic_placeholder_ad"
+              fresco:failureImageScaleType="focusCrop"
+              fresco:placeholderImage="@drawable/ic_placeholder_ad"
+              fresco:roundAsCircle="true"/>
+
+            <LinearLayout
+              android:id="@+id/ll_data"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_toEndOf="@+id/img_post"
+              android:orientation="vertical">
+
+              <TextView
+                android:id="@+id/tv_title_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/all_padding"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@android:color/white"/>
+
+              <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/all_padding"
+                android:ellipsize="end"
+                android:maxLines="1"
+                  android:visibility="gone"
+                android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="1dp"
+              android:layout_marginTop="@dimen/all_padding"
+              android:layout_alignStart="@+id/img_post"
+              android:layout_alignEnd="@+id/ll_data"
+              android:layout_below="@+id/img_post"
+              android:background="#33ffffff"
+              android:visibility="visible"></TextView>
+          </RelativeLayout>
+
+          <TextView
+            android:id="@+id/messageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+
+      </LinearLayout>
+
+    </RelativeLayout>
+
+  </LinearLayout>
+</android.support.constraint.ConstraintLayout>

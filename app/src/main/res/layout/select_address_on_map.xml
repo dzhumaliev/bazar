@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:keepScreenOn="true"
+    tools:context=".presentation.ui.addad.SelectOnMap">
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <View
+        android:layout_width="1dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/view_center"
+        android:background="@android:color/transparent"
+        android:layout_height="1dp">
+
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/field_adress"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="#9Fe9e5dc">
+        <TextView
+            android:id="@+id/textLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:maxLines="2"
+            android:minEms="5"
+            android:paddingStart="@dimen/all_padding"
+            android:paddingEnd="@dimen/all_padding"
+            android:textColor="@color/colorPrimaryDark" />
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progressAdress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/field_adress"
+        android:layout_alignTop="@+id/field_adress"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/btn_chek"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:text="@string/accept_adr"
+        android:textAllCaps="false"
+        android:stateListAnimator="@null"
+        android:layout_margin="@dimen/fab_margin"
+        android:paddingEnd="@dimen/fab_margin"
+        android:paddingStart="@dimen/fab_margin"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/size_text_loin"
+        android:background="@drawable/bg_btn_phone"
+        android:textColor="@color/selector_btn_text_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView9"
+        android:background="@android:color/transparent"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/view_center"
+        android:src="@drawable/pin_my_loc"/>
+</RelativeLayout>

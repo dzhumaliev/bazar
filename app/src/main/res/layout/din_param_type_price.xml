@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<solutions.isky.gaurangarevolution.presentation.view.DinParamsTypePrice xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_text_info"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:paddingBottom="@dimen/all_padding"
+            android:paddingStart="@dimen/fab_margin"
+            android:paddingTop="@dimen/all_padding"
+            app:srcCompat="@drawable/ic_keyboard_arrow_right" />
+        <ImageButton
+            android:id="@+id/ibClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:paddingBottom="@dimen/all_padding"
+            android:paddingStart="@dimen/all_padding"
+            android:paddingTop="@dimen/all_padding"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_clear_red" />
+    </LinearLayout>
+
+</solutions.isky.gaurangarevolution.presentation.view.DinParamsTypePrice>

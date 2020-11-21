@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  tools:context=".presentation.ui.my_profile.VerificationPhoneActivity"
+  tools:showIn="@layout/activity_verification_phone">
+
+  <ScrollView
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/fab_margin"
+      android:focusableInTouchMode="true"
+      android:orientation="vertical">
+
+      <requestFocus></requestFocus>
+
+      <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/text_pr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#464746" />
+
+      <LinearLayout
+        android:id="@+id/til_new_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_bubble"
+        android:paddingStart="@dimen/all_padding"
+        android:paddingEnd="@dimen/all_padding"
+        android:paddingTop="@dimen/common_circle_width">
+
+        <com.hbb20.CountryCodePicker
+          android:id="@+id/ccp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:ccp_autoFormatNumber="true"
+          app:ccp_autoDetectCountry="true"
+          app:ccp_areaCodeDetectedCountry="true"
+          app:ccp_rememberLastSelection="true"
+          app:ccp_contentColor="@color/color_add_money"
+          android:layout_gravity="start|center"
+          app:ccp_autoDetectLanguage="true"
+          app:ccp_showNameCode="false"
+          app:ccp_showFlag="true"
+          app:ccp_flagBorderColor="@color/color_price_list"
+          app:ccpDialog_showCloseIcon="true"
+          app:ccpDialog_keyboardAutoPopup="false"
+          app:ccpDialog_allowSearch="false"/>
+
+        <solutions.isky.gaurangarevolution.presentation.view.MyCustomEditText
+          android:id="@+id/tie_phone"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@android:color/transparent"
+          android:hint="@string/number_phone"
+          android:inputType="phone"
+          android:layout_gravity="start|center"
+          android:paddingBottom="@dimen/data_item_row_padding"
+          android:paddingTop="@dimen/data_item_row_padding"
+          android:textStyle="bold"
+          app:x_clearDrawable="@drawable/ic_clear_red"
+          app:x_disableEmoji="true" />
+      </LinearLayout>
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_divider"></View>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/heigh_size_fild"
+        android:text="@string/write_phone"
+        android:textColor="#a4a5a6" />
+
+      <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_btn_login"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:background="@drawable/bg_btn_login"
+        android:text="@string/further"
+        android:textAllCaps="false"
+        android:textSize="@dimen/size_text_loin"
+        android:textColor="@color/selector_btn_text_login" />
+    </LinearLayout>
+  </ScrollView>
+</android.support.constraint.ConstraintLayout>

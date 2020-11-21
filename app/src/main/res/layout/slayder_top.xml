@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/app_bar_height_info"
+    android:orientation="vertical">
+
+    <solutions.isky.gaurangarevolution.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+
+        android:layout_height="@dimen/app_bar_height_info" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent">
+
+        <solutions.isky.gaurangarevolution.slider.library.Indicators.PagerIndicator
+            android:id="@+id/custom_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:gravity="center"
+            custom:selected_drawable="@drawable/white_radius"
+            custom:selected_height="10dp"
+            custom:selected_padding_left="0dp"
+            custom:selected_padding_right="0dp"
+            custom:selected_width="10dp"
+            custom:shape="oval"
+            custom:unselected_drawable="@drawable/black_radius"
+            custom:unselected_height="10dp"
+            custom:unselected_padding_left="0dp"
+            custom:unselected_padding_right="0dp"
+            custom:unselected_width="10dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

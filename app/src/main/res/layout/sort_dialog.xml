@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/bg_btn_search"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:paddingTop="@dimen/fab_margin"
+        android:text="@string/sort"
+        android:textColor="@color/color_price_list"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:clickable="true"
+        android:text="@string/newest"
+        android:id="@+id/sort_newest"
+        android:paddingTop="@dimen/all_padding"
+        android:paddingBottom="@dimen/all_padding"
+        android:paddingEnd="@dimen/fab_margin"
+        android:paddingStart="@dimen/fab_margin"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+<View
+    android:layout_width="match_parent"
+    android:layout_marginStart="@dimen/all_padding"
+    android:layout_marginEnd="@dimen/all_padding"
+    android:background="@color/color_divider"
+    android:layout_height="1dp"></View>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:clickable="true"
+        android:paddingTop="@dimen/all_padding"
+        android:paddingBottom="@dimen/all_padding"
+        android:paddingEnd="@dimen/fab_margin"
+        android:paddingStart="@dimen/fab_margin"
+        android:id="@+id/sort_cheapest"
+        android:text="@string/cheapest"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/all_padding"
+        android:layout_marginEnd="@dimen/all_padding"
+        android:background="@color/color_divider"
+        android:layout_height="1dp"></View>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:clickable="true"
+        android:paddingTop="@dimen/all_padding"
+        android:paddingBottom="@dimen/fab_margin"
+        android:paddingEnd="@dimen/fab_margin"
+        android:paddingStart="@dimen/fab_margin"
+        android:id="@+id/sort_expensive"
+        android:text="@string/expensive"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+</LinearLayout>

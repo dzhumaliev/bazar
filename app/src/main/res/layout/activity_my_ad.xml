@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".presentation.ui.my_profile.MyAdActivity">
+
+  <android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="?attr/colorPrimary"
+      android:theme="@style/ToolbarStyle"
+      app:popupTheme="@style/AppTheme.PopupOverlay">
+      <ImageView
+        android:id="@+id/btn_my_shop"
+        android:layout_width="@dimen/size_icon_menu"
+        android:layout_height="@dimen/size_icon_menu"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_gravity="end"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_menu_tools"/>
+    </android.support.v7.widget.Toolbar>
+
+  </android.support.design.widget.AppBarLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <android.support.design.widget.TabLayout
+      android:id="@+id/tabs"
+      style="@style/StyleTabLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+
+      android:background="@android:color/white"/>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/color_price_list"></View>
+    <android.support.v4.view.ViewPager
+      android:id="@+id/container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+  </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

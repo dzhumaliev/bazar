@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: ru.ok:odnoklassniki-android-sdk-2.1.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/odnoklassniki-android-sdk-2.1.5.aar/5541497e541d6070d26d9c20a7b25a60/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/odnoklassniki-android-sdk-2.1.5.aar/5541497e541d6070d26d9c20a7b25a60/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ru.ok/odnoklassniki-android-sdk/2.1.5/504e44ac27754f45cc593b59a3266cec130a0ca1/odnoklassniki-android-sdk-2.1.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

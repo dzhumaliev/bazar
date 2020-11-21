@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<solutions.isky.gaurangarevolution.presentation.ui.addad.custom_view.din_params.YesNoChoice xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <solutions.isky.gaurangarevolution.presentation.ui.addad.custom_view.MyFildForAddAd
+            android:id="@+id/til_text"
+            android:layout_height="wrap_content"
+            app:my_disableArrow="false"
+            app:my_isVisibleCkear="true"
+            android:layout_width="match_parent"></solutions.isky.gaurangarevolution.presentation.ui.addad.custom_view.MyFildForAddAd>
+
+
+    </RelativeLayout>
+
+</solutions.isky.gaurangarevolution.presentation.ui.addad.custom_view.din_params.YesNoChoice>

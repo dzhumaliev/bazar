@@ -1,0 +1,3 @@
+include ':app', ':picture_library1', ':ucrop1', ':cropper'
+project(':picture_library1').projectDir = new File('picture_library')
+project(':ucrop1').projectDir = new File('ucrop')

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".presentation.ui.filters.ListActivityAllFilter"
+    tools:showIn="@layout/activity_list_all_filter">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swiprefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewListAds"
+            android:paddingStart="@dimen/all_padding"
+            android:paddingEnd="@dimen/all_padding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_no_ads"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/all_padding"
+        android:paddingEnd="@dimen/all_padding"
+        android:paddingBottom="@dimen/hight_btn_login"
+        android:layout_centerInParent="true">
+
+
+        <ImageView
+            android:id="@+id/img_no_ads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_empty_list"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/text_no_ads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_no_ads"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_centerHorizontal="true"
+            android:text="@string/ads_empty"
+            android:textColor="#68b2f6"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_no_shops"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/all_padding"
+        android:paddingEnd="@dimen/all_padding"
+        android:paddingBottom="@dimen/hight_btn_login"
+        android:layout_centerInParent="true">
+
+
+        <ImageView
+            android:id="@+id/img_no_shops"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_empty_shop_list"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/text_no_shops"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_no_shops"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_centerHorizontal="true"
+            android:text="@string/shops_empty"
+            android:textColor="#68b2f6"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+</RelativeLayout>
