@@ -86,6 +86,7 @@ import static com.mikepenz.fastadapter.adapters.ItemAdapter.items;
 public class MainActivity extends MvpAppCompatActivity implements IMainView,
     SwipeRefreshLayout.OnRefreshListener, View.OnClickListener {
 
+
   @BindView(R.id.toolbar)
   Toolbar toolbar;
   @BindView(R.id.drawer_layout)
